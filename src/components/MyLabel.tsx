@@ -18,11 +18,13 @@ export interface Props {
    * Basic color label
    */
 
-  color: "primary" | "secondary" | "tertiary";
+  color?: "primary" | "secondary" | "tertiary";
   /**
    * Custom Color label
    */
   customColor?: string;
+
+  backGround?: string;
 }
 
 /**
@@ -34,11 +36,12 @@ export const MyLabel = ({
   allCaps = false,
   color = "primary",
   customColor,
+  backGround = "transparent",
 }: Props) => {
   return (
     <span
       className={`${size} ${allCaps && "allCaps"} label text-${color}`}
-      style={{ color: customColor}}
+      style={{ color: customColor, backgroundColor: backGround }}
     >
       {label}
     </span>
