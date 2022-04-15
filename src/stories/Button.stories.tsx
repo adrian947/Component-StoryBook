@@ -39,3 +39,8 @@ Small.args = {
   size: 'small',
   label: 'Button',
 };
+
+export const Radius = Template.bind({});
+Radius.args = {
+  radius: false
+}
