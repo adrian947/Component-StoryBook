@@ -21,7 +21,7 @@ export interface ButtonProps {
   /**
    * Button radius
    */
-  radius: boolean;
+  radius?: boolean;
   /**
    * Optional click handler
    */
